@@ -66,12 +66,6 @@ int main ()
 		N = N + 1;
 	}
 	cout << N << " nota(s) de R$ 1,00" << endl;
-
-
-
-
-
-
-
+	
 	return 0;
 }
