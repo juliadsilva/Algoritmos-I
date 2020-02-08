@@ -9,8 +9,18 @@ int main()
 	int n;
 	int c;
 	int maior;
+	int temp; //variavel para troca
+	bool flag = false; // flag para troca
 
 	cin >> i >> j;
+	// Caso a segunda entrada seja menor que a primeira
+	// realiza a troca para entrar no laço de repetição
+	if( j < i ){
+		temp = i;
+		i = j;
+		j = temp;
+		flag = true;
+	}
 
 	c = 0;
 	maior = 0;
@@ -37,12 +47,16 @@ int main()
 
 		if (maior < c)
 			maior = c;
-
 	}
 
-	cout << i << endl;
-	cout << j << endl;
-	cout << maior << endl;
+
+	if (flag){
+		temp = i;
+		i = j;
+		j = temp;
+	}
+
+	cout << i <<" " << j << " " << maior << endl;
 
 
 	return 0;

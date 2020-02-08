@@ -38,6 +38,7 @@ void diaSemana (int ds){
 		break;
 	case 2:
 		cout << "segunda-feira" << endl;
+		break;
 	case 3:
 		cout << "terca-feira" << endl;
 		break;
@@ -58,8 +59,8 @@ void diaSemana (int ds){
 
 int main (){
 
-	int dia, mes, ano; //Variáveis de entrada
-	int g, f, n, delta, ds; // Variáveis a serem calculadas
+	int dia, mes, ano; //Variï¿½veis de entrada
+	int g, f, n, delta, ds; // Variï¿½veis a serem calculadas
 
 	cin >> dia >> mes >> ano;
 
