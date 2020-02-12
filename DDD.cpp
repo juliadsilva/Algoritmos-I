@@ -1,46 +1,35 @@
 #include <iostream>
+#include <string.h>
+#include <iomanip>
 
 using namespace std;
 
 int main(){
 
-    char nome_cidade;
+    char cidade[1000];
     
-    cin >> nome_cidade;
+    cin.getline(cidade,1000);
 
-    switch (nome_cidade){
-        case 'Brasilia':
-            cout << 61 << endl;
-            break;
-        case 'Salvador':
-            cout << 71 << endl;
-            break;
-        case 'Sao Paulo':
-            cout << 11 << endl;
-            break;
-        case 'Rio de Janeiro':
-            cout << 21 << endl;
-            break;
-        case 'Juiz de Fora':
-            cout << 32 << endl;
-            break;
-        case 'Campinas':
-            cout << 19 << endl;
-            break;
-        case 'Vitoria':
-            cout << 27 << endl;
-            break;
-        case 'Belo Horizonte':
-            cout << 31 << endl;
-            break;
-        case 'Santa Rita do Sapucai':
-            cout << 35 << endl;
-            break;
-        default:
-            cout << " DDD nao cadastrado" << endl;
-    }
-
+    if (strcmp(cidade,"Brasilia") == 0)
+        cout << 61 << endl;
+    else if (strcmp(cidade,"Salvador") == 0)
+        cout << 71 << endl;
+    else if (strcmp(cidade,"Sao Paulo") == 0)
+        cout << 11 << endl;
+    else if (strcmp(cidade,"Rio de Janeiro") == 0)
+        cout << 21 << endl;
+    else if (strcmp(cidade,"Juiz de Fora") == 0)
+        cout << 32 << endl;
+    else if (strcmp(cidade,"Campinas") == 0)
+        cout << 19 << endl;
+    else if (strcmp(cidade,"Vitoria") == 0)
+        cout << 27 << endl;
+    else if (strcmp(cidade,"Belo Horizonte") == 0)
+        cout << 31 << endl;
+    else if (strcmp(cidade,"Santa Rita do Sapucai") == 0)
+        cout << 35 << endl;
+    else cout << " DDD nao cadastrado" << endl;
+    
     return 0;    
-
 
 }
