@@ -21,7 +21,7 @@ int main(){
     }
 
     for(i = 0; i<N; i++){
-        if( idade[i] >= 18) cout << names[i] << " "<< idade[i] << endl;
+        if( idade[i]>= 18) cout << names[i] << " "<< idade[i] << endl;
     }
 
     return 0;
