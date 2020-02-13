@@ -1,7 +1,5 @@
 #include <iostream>
-#include <string.h>
-#include <iomanip>
-#include <vector>
+#include <cstring>
 
 using namespace std;
 
@@ -11,12 +9,19 @@ int main(){
     int N;
     int idade[1000];
     char nome[1000];
+    string names[N];
 
     cin >> N;
-    cin.getline(nome,1000);
-    for(i=0;i<N;i++){
-         cin >> idade[i];
-         cout << nome[i] << idade [i] << endl;
+    
+    for(i = 0; i<N; i++){
+        cin.ignore();
+        cin.getline(nome,1000);
+        names[i] = nome;
+        cin >> idade[i];
+    }
+
+    for(i = 0; i<N; i++){
+        if( idade[i]>= 18) cout << names[i] << " "<< idade[i] << endl;
     }
 
     return 0;
