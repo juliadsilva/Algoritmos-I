@@ -5,8 +5,8 @@ using namespace std;
 
 int main ()
 {
-	int N;
-	float D;
+	int N; //notas
+	float D;//dinheiro
 
 	cin >> D;
 
